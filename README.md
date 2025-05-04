@@ -8,16 +8,16 @@
 
 # Lensight
 
-A command-line tool for adding camera information and shooting details to photos.
+A command-line tool for embedding camera metadata and shooting details into photos.
 
 ## Features
 
-- Add camera information and shooting details to photos
-- Support for single image and batch processing
-- Built-in support for major camera brands (Canon, Nikon, Sony, Fujifilm, Panasonic)
+- Embed camera metadata and shooting details into photos
+- Support for both single image and batch processing
+- Native support for major camera manufacturers (Canon, Nikon, Sony, Fujifilm, Panasonic)
 - Optional 16:9 aspect ratio output for video platforms
 - Custom logo support
-- Customizable information bar height with adaptive font and logo sizing
+- Configurable information bar height with adaptive font and logo sizing
 
 ## Installation
 
@@ -91,11 +91,11 @@ Processed result:
 16:9 aspect ratio result:
 ![16:9 Result](docs/IMG_0197_info_16_9.jpg)
 
-> Note: Please do not use the sample images in the repository for testing as they have been compressed and lost their EXIF data for preview purposes.
+> Note: The sample images in the repository have been compressed and their EXIF data removed for preview purposes. Please use your own images for testing.
 
 ## Related Projects
 
-- [**camera-watermark**](https://github.com/dearDreamWeb/camera-watermark): This project uses the logo files organized by this project.
+- [**camera-watermark**](https://github.com/dearDreamWeb/camera-watermark): Lensight utilizes the logo files organized by this project.
 
 ## License
 
