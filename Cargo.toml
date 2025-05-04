@@ -1,0 +1,30 @@
+[package]
+name = "lensight"
+version = "0.1.0"
+edition = "2021"
+description = "A command-line tool for adding camera information and shooting details to photos."
+authors = ["AngelMsger <angelmsger@vip.qq.com>"]
+license = "MIT"
+repository = "https://github.com/AngelMsger/lensight"
+readme = "README.md"
+
+[dependencies]
+image = "0.24.7"
+kamadak-exif = "0.5.5"
+clap = { version = "4.4.11", features = ["derive"] }
+walkdir = "2.4.0"
+imageproc = "0.23.0"
+rusttype = "0.9.3"
+base64 = "0.21.5"
+
+[dev-dependencies]
+assert_fs = "1.0.13"
+tempfile = "3.8.1"
+
+[[bin]]
+name = "lensight"
+path = "src/main.rs"
+
+[lib]
+name = "lensight"
+path = "src/lib.rs"
