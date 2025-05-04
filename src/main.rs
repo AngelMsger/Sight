@@ -25,7 +25,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
     let input_path = Path::new(&args.input);
     let output_path = Path::new(&args.output);
 
-    // 检查输入路径是否存在
+    // Check if input path exists
     if !input_path.exists() {
         println!(
             "[ERROR] Input path does not exist: {}",
@@ -34,7 +34,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
         return Ok(());
     }
 
-    // 检查输出目录是否存在，如果不存在则创建
+    // Check if output directory exists, create it if not
     if let Some(parent) = output_path.parent() {
         if !parent.exists() {
             println!("[INFO] Creating output directory: {}", parent.display());
